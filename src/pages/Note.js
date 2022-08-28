@@ -64,8 +64,7 @@ let handleDelete = () =>{
             </div>
          { id !=='create' ? <div className="delete2"> <Delete id={id}/> </div>
                  : <button className='done' onClick={handleCreate}>Done</button>}
-   
-         <textarea onChange={(e)=>{ SetNote({...note, "title": e.target.value  })}} value={note.title}>
+        <textarea onChange={(e)=>{ SetNote({...note, "title": e.target.value  })}} value={note.title}>
             {note.title}
         </textarea>
             </div> 
