@@ -1,38 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+body{
+    background-color: #1E1E1E;
+    /* scroll-behavior: smooth; */
+}
 .App {
+  color: #fff;
+    background-color: #111827;
   text-align: center;
-}
+  font-family: 'Inter';
+  width: 700px;
+  margin:20px auto;
+  padding: 0px;
+  height: 650px;
+  display: grid;
+  grid-template-columns: repeat(10,1fr)  ;
+  grid-template-rows: 150px 1fr;
+  gap: 10px;
+  /* border: #fff solid 2px; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Header{
+  grid-area: head;
+  grid-column: 3/9;
+  grid-row: 1;
+  text-align: center;
+  display: flex; 
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} 
+.Header h2 {
+  font-size: 40px;
+}
+.Header p{
+  margin-top: -20px;
+  font-size: 25px;
+}
+.items{
+  font-size: 24px;
+  /* margin: 10px; */
+  grid-column: 2/10;
+  grid-row:  2;
+  /* justify-content: center;
+  align-content: center; */
+}
+.items{
+  grid-column: 2/10;
+  grid-row: 2;
+}
+.items textarea{
+  width: 600px;
+  margin: auto;
+  height:300px;
+  background-color: #111827;
+  border: rgb(156, 153, 153) solid 2px;
+  border-radius: 0px;
+  
+  color: #fff;
+  font: inherit;
+  resize: none;
+}
+ .add_position{
+  margin-top: 10px;
+  float:right;
+  margin-left: 20px;
+
+  
+ }
+.items .back{
+  float: left;
+
+}
+.items .done{
+    text-transform: uppercase;
+  float: right;
+    background-color: transparent;
+    border: #1F2937;
+    font: inherit;
+    color: #DC143C ;
+    width: 100px;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.ListItem {
+  /* border: 1px solid #fff; */
+  border-radius: 16px;
+  padding: 16px;
+  margin-top:10px;
+  /* width: autofill; */
+  height: 20px;
+  line-height: 1rem;
+  background-color: #111827;
+  display: flex; 
+  justify-content:center;
+   font-weight: 400;
+   align-content:flex-start ;
+   text-align: center;
+}
+.ListItem p  { 
+background-color: #111827;
+  margin: 3px 0px;
+  text-align: left;
+  vertical-align: middle;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add button {
+  text-transform: uppercase;
+  font: inherit;
+  float: left;
+  font-weight: bold;
+  grid-area: addButton;
+  color: #DC143C;
+  border: transparent;
+  background-color: transparent;
 }
+.delete {
+  background-color: transparent;
+  border: transparent;
+  font: inherit;
+  color: #DC143C  !important;
+  width: 100px;
+  float: right;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.edit button{
+    text-transform: uppercase;
+  background-color: transparent;
+  border: transparent;
+  font: inherit;
+  color: #671974 ;
+  font-weight: bolder;
+  width: 100px;
+  float: right;
+}
+div.ListItem:hover, div.ListItem:hover p {
+  background-color: #1E1E1E;
+}
+.delete2 button, .done {
+  float:right ;
+  margin-top: 15px;
+  margin-right: -30px;
+}
+ .edit:hover button, .delete:hover,.delete2:hover , .add:hover button, button.done:hover{
+  color: green; 
+  font-size: 1.1em;
+}
+
