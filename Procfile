@@ -1,0 +1,1 @@
+web: gunicorn todlistapp.wsgi --log-file -
