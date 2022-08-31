@@ -15,8 +15,8 @@ const NotesList = () => {
     }
     return ( 
     <div className="items">
-       {/* <p> Notes {notes.length} </p>  */}
-        {notes.map( (note,index) => (
+      {notes==null} ?  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+       : {notes.map( (note,index) => (
             <Item key={index}note={note} />
             ))}
         <div className="add_position">
