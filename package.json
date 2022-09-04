@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ihebkhodja.github.io/",
+  "homepage": "https://ihebkhodja.github.io/todo-list/",
   "name": "frontend",
   "PROXY":"https://todlistapp.herokuapp.com/",
   "version": "0.1.0",
