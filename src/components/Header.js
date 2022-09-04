@@ -6,6 +6,7 @@ const Header = () => {
             <h2>Todo List</h2>
             <p>Write your daily shores</p>
         </nav>
+        
         </div>
        
      );

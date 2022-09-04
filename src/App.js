@@ -11,7 +11,7 @@ function App() {
     <Router >
         <Header className='Header' />
         <Routes>
-            <Route exact path="/" element={<NotesList/>} >   </Route>
+            <Route  path="/" element={<NotesList/>} >   </Route>
             <Route  path="/note/:id" element={<Note />}></Route>
         </Routes>
     </Router>

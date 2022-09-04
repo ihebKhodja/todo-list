@@ -16,9 +16,6 @@ body{
   grid-template-columns: repeat(10,1fr)  ;
   grid-template-rows: 150px 1fr;
   gap: 10px;
-  /* border: #fff solid 2px; */
-
-
 }
 .Header{
   grid-area: head;
@@ -44,10 +41,7 @@ body{
   /* justify-content: center;
   align-content: center; */
 }
-.items{
-  grid-column: 2/10;
-  grid-row: 2;
-}
+
 .items textarea{
   width: 600px;
   margin: auto;
